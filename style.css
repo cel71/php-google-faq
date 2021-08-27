@@ -13,6 +13,26 @@
     width: 110px;
 }
 
+.button1 {
+    margin-right: 15px;
+}
+
+.button1 i {
+    margin-right: 15px;
+    color: grey;
+    font-size: 20px;
+}
+
+.button1 button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
 .list ul {
     display: flex;
     margin-left: 5px;

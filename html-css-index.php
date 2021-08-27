@@ -10,7 +10,7 @@
     <title>Google Faq</title>
 </head>
 <body>
-    
+    <div class=box>
     <div class=navbar>
         <div class=logo>
             <img src="./img/logo-google.png" alt="">
@@ -18,8 +18,8 @@
                 <h4>Privacy e termini</h4>
             </div>
         </div>
-        <div class=button>
-            <img src="" alt="">
+        <div class=button1>
+            <i class="fas fa-th"></i>
             <button>Accedi</button>
         </div>
     </div>
@@ -34,6 +34,9 @@
     </div>
 
     <hr>
+    </div>
+    
+
 
 
     <div class=container>
