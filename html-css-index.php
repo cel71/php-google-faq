@@ -23,22 +23,18 @@
             <button>Accedi</button>
         </div>
     </div>
-    <div class=list>
-        <ul>
-            <li>Introduzione</li>
-            <li>Norme sulla privacy</li>
-            <li>Termini di servizio</li>
-            <li>Tecnologie</li>
-            <li>Domande frequenti</li>
+    <div class=list-navbar>
+        <ul class=list>
+            <li class=inner-list>Introduzione</li>
+            <li class=inner-list>Norme sulla privacy</li>
+            <li class=inner-list>Termini di servizio</li>
+            <li class=inner-list>Tecnologie</li>
+            <li class=inner-list>Domande frequenti</li>
         </ul>
+        <div class=line></div>
     </div>
-
-    <hr>
     </div>
     
-
-
-
     <div class=container>
     <?php
 
@@ -74,7 +70,7 @@ $faqs = [
     'question' => "Stabilire il paese associato al tuo account",
     'answer' => "Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.
     I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l'associazione del paese.
-    Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"#\">Contattaci <img src=\" image\"></a>se ritieni che il paese associato al tuo account sia sbagliato.",
+    Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"#\">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.",
     ],            
     [
     'question' => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
@@ -87,7 +83,7 @@ $faqs = [
     ];
 
     foreach ($faqs as $faq) {
-        echo "<p>{$faq['question']}</p><br>";
+        echo "<div class=question><p>{$faq['question']}</p><br></div>";
         echo "<p>{$faq['answer']}</p><br>";
     }
 
