@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Google Faq</title>
 </head>
 <body>
@@ -82,15 +82,29 @@ $faqs = [
     ];
 
     foreach ($faqs as $faq) {
-        echo "<div class=question><p>{$faq['question']}</p><br></div>";
-        echo "<p>{$faq['answer']}</p><br>";
-    }
+        $newFaq = str_ireplace('.', '</p><p>', $faq);
+        echo "<div class=question><p>{$newFaq['question']}</p><br></div>";
+        echo "<p>{$newFaq['answer']}</p><br>";
+    };
 
 ?>
 
 </div>
 
-<div class=footer></div>
-    
+<div class=box2>
+        <div class=list2>
+            <ul>
+                <li>Google .</li>
+                <li>Tutto su Google .</li>
+                <li>Privacy .</li>
+                <li>Termini</li>
+            </ul>
+        </div>
+        <div class=menu-tendina>
+            <i class="far fa-comment-alt"></i>
+            <div class=lingua>Italiano <i class="fas fa-chevron-down"></i></div>
+        </div>
+</div>
+
 </body>
 </html>

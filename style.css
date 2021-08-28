@@ -1,7 +1,13 @@
 .box {
     height: 120px;
     border-bottom: 1px solid grey;
-    margin-bottom: 80px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+
+.container {
+    padding-top: 200px;
 }
 
 .navbar, .logo, .button {
@@ -87,8 +93,53 @@ h5 {
     font-weight: bold;
 }
 
-.footer {
+.box2 {
     width: 100%;
     height: 50px;
     background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.list2 ul {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+    margin-left: 80px;
+    padding-top: 20px;
+}
+
+.list2 li {
+    padding-right: 10px;
+}
+
+.menu-tendina {
+    display: flex;
+    margin-right: 120px;
+    align-items: center;
+}
+
+.fa-comment-alt {
+    color: blue;
+    font-size: 16px;
+}
+
+.lingua {
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.list2 li, .fa-comment-alt, .lingua i:hover {
+    cursor: pointer;
 }
